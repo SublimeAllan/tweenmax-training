@@ -7,7 +7,7 @@
   background-size: cover;
   &::after {
     content: '';
-    display: block;
+    display: flex;
 
     position: absolute;
     z-index: 1;

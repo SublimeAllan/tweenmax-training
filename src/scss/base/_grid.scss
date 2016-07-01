@@ -1,0 +1,34 @@
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: $mainWidth;
+  .row {
+    margin: 0 -1rem;
+    &.no-margin {
+      margin: 0;
+    }
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 1rem;
+  &.center-content {
+    justify-content: center;
+  }
+  &.fluid {
+    padding: 0;
+  }
+}
+
+@for $i from 1 through 12 {
+  .large-#{$i} { width: 100%/12*$i !important; }
+  .large-offset-#{$i} { margin-left: 100%/12*$i !important; }
+  .large-offset-0 {margin-left: 0 !important;}
+}
