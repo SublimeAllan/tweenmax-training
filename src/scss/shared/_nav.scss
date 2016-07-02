@@ -32,15 +32,17 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 
+    transition: 200ms all ease;
+
     &::after, &::before {
       content: '';
       display: block;
 
       position: absolute;
-      top: 80%;
+      top: 72%;
 
-      height: 2px; width: 0;
-      background-color: $white;
+      height: 4px; width: 0;
+      background-color: $zest;
 
       transition: 200ms all ease;
     }
@@ -55,6 +57,10 @@
 
     &:hover::after, &:hover::before {
       width: 50%;
+    }
+
+    &:hover {
+      color: $zest;
     }
 
   }

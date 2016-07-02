@@ -170,15 +170,16 @@ a {
     padding: 1rem 0;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700; }
+    font-weight: 700;
+    transition: 200ms all ease; }
     .Nav_link::after, .Nav_link::before {
       content: '';
       display: block;
       position: absolute;
-      top: 80%;
-      height: 2px;
+      top: 72%;
+      height: 4px;
       width: 0;
-      background-color: #ffffff;
+      background-color: #E87A22;
       transition: 200ms all ease; }
     .Nav_link::after {
       left: 50%; }
