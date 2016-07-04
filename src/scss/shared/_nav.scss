@@ -44,7 +44,7 @@
       height: 4px; width: 0;
       background-color: $zest;
 
-      transition: 200ms all ease;
+      transition: 200ms all $backEasing;
     }
 
     &::after {

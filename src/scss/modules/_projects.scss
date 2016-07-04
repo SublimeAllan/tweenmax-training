@@ -1,0 +1,45 @@
+.Projects {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 0;
+
+  &_list {
+    margin: 1.5rem 0 0;
+  }
+
+  &_card {
+    flex-flow: column;
+
+    justify-content: center;
+    align-items: center;
+
+    background: $white;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .3);
+  }
+
+  &_image {
+    width: 100%;
+  }
+
+  &_cardContent {
+    flex-flow: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: .5rem;
+  }
+
+  &_cardTitle {
+    margin: .5rem 0;
+    font-size: 1.3rem;
+  }
+
+  &_cardText {
+    margin: .5rem 0;
+    font-size: 1rem;
+
+    text-align: center;
+  }
+}

@@ -29,7 +29,7 @@ a {
   justify-content: flex-start;
   box-sizing: border-box;
   width: 100%;
-  max-width: 960px; }
+  max-width: 1000px; }
   .row .row {
     margin: 0 -1rem; }
     .row .row.no-margin {
@@ -186,7 +186,7 @@ a {
       height: 4px;
       width: 0;
       background-color: #E87A22;
-      transition: 200ms all ease; }
+      transition: 200ms all cubic-bezier(0.36, 0.07, 0.8, 1.42); }
     .Nav_link::after {
       left: 50%; }
     .Nav_link::before {
@@ -282,4 +282,32 @@ a {
     margin-bottom: 3rem; }
   .AboutMe_text {
     max-width: 500px;
+    text-align: center; }
+
+.Projects {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 0; }
+  .Projects_list {
+    margin: 1.5rem 0 0; }
+  .Projects_card {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3); }
+  .Projects_image {
+    width: 100%; }
+  .Projects_cardContent {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem; }
+  .Projects_cardTitle {
+    margin: .5rem 0;
+    font-size: 1.3rem; }
+  .Projects_cardText {
+    margin: .5rem 0;
+    font-size: 1rem;
     text-align: center; }
