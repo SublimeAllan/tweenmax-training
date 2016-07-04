@@ -12,7 +12,8 @@ html, body {
 
 #main {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  flex-flow: column; }
 
 a {
   color: inherit;
@@ -227,3 +228,12 @@ a {
     font-family: 'Montserrat';
     text-transform: uppercase;
     letter-spacing: .2rem; }
+
+.AboutMe {
+  justify-content: center;
+  align-items: center; }
+  .AboutMe_imageContainer {
+    justify-content: center;
+    align-items: center; }
+  .AboutMe_image {
+    width: 100%; }

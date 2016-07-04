@@ -1,0 +1,13 @@
+.AboutMe {
+  justify-content: center;
+  align-items: center;
+
+  &_imageContainer {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_image {
+    width: 100%;
+  }
+}
