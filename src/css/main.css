@@ -10,6 +10,9 @@ html, body {
   font-size: 16px;
   font-family: 'Judson', serif; }
 
+body {
+  background: #fafafa; }
+
 #main {
   width: 100%;
   height: 100%;
@@ -31,6 +34,8 @@ a {
     margin: 0 -1rem; }
     .row .row.no-margin {
       margin: 0; }
+  .row.fluid {
+    max-width: 100%; }
 
 .column {
   display: flex;
@@ -191,13 +196,29 @@ a {
     .Nav_link:hover {
       color: #E87A22; }
 
+.UI_title {
+  margin: 0;
+  color: #040603;
+  font-size: 2.8rem;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  letter-spacing: .3rem; }
+
+.UI_subtitle {
+  font-size: 2rem;
+  margin: 1rem 0; }
+
+.UI_text {
+  font-size: 1.2rem;
+  margin: .5rem 0; }
+
 .Landing {
   position: relative;
   width: 100%;
   height: 100%;
   justify-content: center;
   align-items: center;
-  background: url("http://s3.foxmovies.com/foxmovies/production/films/103/images/gallery/deadpool1-gallery-image.jpg");
+  background: url("../img/landing.jpg");
   background-size: cover; }
   .Landing::after {
     content: '';
@@ -208,7 +229,7 @@ a {
     z-index: 1;
     width: 100%;
     height: 100%;
-    background: rgba(189, 10, 14, 0.6); }
+    background: rgba(189, 27, 27, 0.6); }
   .Landing_container {
     position: relative;
     z-index: 10;
@@ -229,11 +250,36 @@ a {
     text-transform: uppercase;
     letter-spacing: .2rem; }
 
-.AboutMe {
+.Continue {
+  flex-flow: column;
+  padding: 8rem 0;
   justify-content: center;
   align-items: center; }
+  .Continue_title {
+    justify-content: center;
+    align-items: center; }
+
+.AboutMe {
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  background: #bd1b1b; }
   .AboutMe_imageContainer {
     justify-content: center;
     align-items: center; }
   .AboutMe_image {
     width: 100%; }
+    .AboutMe_image--left {
+      margin-bottom: -8rem; }
+    .AboutMe_image--right {
+      margin-top: -8rem; }
+  .AboutMe_textContainer {
+    justify-content: center;
+    align-items: center; }
+  .AboutMe_title, .AboutMe_subtitle, .AboutMe_text {
+    color: #ffffff; }
+  .AboutMe_subtitle {
+    margin-bottom: 3rem; }
+  .AboutMe_text {
+    max-width: 500px;
+    text-align: center; }

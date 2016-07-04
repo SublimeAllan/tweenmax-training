@@ -1,6 +1,9 @@
 .AboutMe {
   justify-content: center;
   align-items: center;
+  padding: 5rem 0;
+
+  background: $redRedemption;
 
   &_imageContainer {
     justify-content: center;
@@ -9,5 +12,30 @@
 
   &_image {
     width: 100%;
+    &--left {
+      margin-bottom: -8rem;
+    }
+
+    &--right {
+      margin-top: -8rem;
+    }
+  }
+
+  &_textContainer {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_title, &_subtitle, &_text {
+    color: $white;
+  }
+
+  &_subtitle {
+    margin-bottom: 3rem;
+  }
+
+  &_text {
+    max-width: 500px;
+    text-align: center;
   }
 }

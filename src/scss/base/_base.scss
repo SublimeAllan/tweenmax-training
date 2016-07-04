@@ -12,6 +12,10 @@ html, body {
   font-family: 'Judson', serif;
 }
 
+body {
+  background: $lightGrey;
+}
+
 #main {
   width: 100%; height: 100%;
   flex-flow: column;

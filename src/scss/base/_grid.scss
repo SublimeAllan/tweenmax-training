@@ -12,6 +12,9 @@
       margin: 0;
     }
   }
+  &.fluid {
+    max-width: 100%;
+  }
 }
 
 .column {

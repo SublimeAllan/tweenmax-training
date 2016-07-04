@@ -1,0 +1,11 @@
+.Continue {
+  flex-flow: column;
+  padding: 8rem 0;
+  justify-content: center;
+  align-items: center;
+
+  &_title {
+    justify-content: center;
+    align-items: center;
+  }
+}
