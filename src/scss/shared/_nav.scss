@@ -7,11 +7,16 @@
 
   width: 100%;
 
+  transition: 300ms all ease;
+
   &_menu {
+    width: 100%;
     margin: 0;
     padding: 0;
 
     font-size: 0;
+
+    border-bottom: 1px solid transparent;
   }
 
   &_item {
@@ -63,5 +68,18 @@
       color: $zest;
     }
 
+  }
+
+  &.colored {
+    background: $white;
+    box-shadow: 0 -5px 9px 0 $octosis;
+
+    .Nav_menu {
+      border-bottom: 1px solid $grey;
+    }
+
+    .Nav_item {
+      color: $octosis;
+    }
   }
 }
