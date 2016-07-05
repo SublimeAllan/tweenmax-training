@@ -3,12 +3,6 @@ var View = (function(){
   }
 
   View.prototype = {
-    animateLanding: function(title, subtitle) {
-      var tl = new TimelineMax()
-      tl.from(title, 0.5, {opacity: 0, y: 30, ease: Power4.easeOut}, '+=0.5')
-        .from(subtitle, 0.5, {opacity: 0, y: 30, ease: Power4.easeOut})
-    },
-
     colorNavbar: function(navbar) {
       var scrollMagicController = new ScrollMagic.Controller()
       var scene = new ScrollMagic.Scene({triggerElement: '.Continue'})
@@ -17,38 +11,20 @@ var View = (function(){
                                       .addTo(scrollMagicController)
     },
 
-    animateKeepScrolling: function(title, subtitle) {
-      var tl = new TimelineMax()
-      tl.from(title, 0.5, {opacity: 0, y: 30, ease: Power4.easeOut}, '+=0.5')
-        .from(subtitle, 0.5, {opacity: 0, y: 30, ease: Power4.easeOut})
+    animateLanding: function(title, subtitle) {
 
-      var controller = new ScrollMagic.Controller()
-      var scene = new ScrollMagic.Scene({triggerElement: '.Continue'})
-                                        .setTween(tl)
-                                        .reverse(false)
-                                        .addTo(controller)
+    },
+
+    animateKeepScrolling: function(title, subtitle) {
+
     },
 
     parallaxAboutMe: function(leftImage, rightImage, duration) {
-      var tl = new TimelineMax()
-      tl.fromTo(leftImage, 0.5, {y: -70}, {y: 0})
-        .fromTo(rightImage, 0.5, {y: -70}, {y: 0}, '-=0.5')
 
-      var controller = new ScrollMagic.Controller()
-      var scene = new ScrollMagic.Scene({triggerElement: '.AboutMe'})
-                                        .setTween(tl)
-                                        .duration(duration)
-                                        .addTo(controller)
     },
 
     staggerProjects: function(elements) {
-      var tween = TweenMax.staggerFrom(elements, 0.5, {scale: 0, ease: Back.easeOut}, 0.5)
 
-      var controller = new ScrollMagic.Controller()
-      var scene = new ScrollMagic.Scene({triggerElement: '.Projects'})
-                                        .setTween(tween)
-                                        .reverse(false)
-                                        .addTo(controller)
     },
 
     writeWord: function(elements, lengths, duration) {
