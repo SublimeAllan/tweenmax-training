@@ -17,6 +17,11 @@ var View = (function(){
     writeWord: function() {
     },
 
+    preparePath: function($el) {
+      var lineLength = $el.getTotalLength();
+      $el.style.strokeDasharray = lineLength;
+      return lineLength;
+    }
 
   }
   return View
