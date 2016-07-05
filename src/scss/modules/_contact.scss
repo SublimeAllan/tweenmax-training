@@ -1,4 +1,6 @@
 .Contact {
+  flex-flow: column;
+
   justify-content: center;
   align-items: center;
   padding: 5rem 0 8rem;
@@ -13,5 +15,45 @@
   &_svg {
     width: 100%;
     .st0{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+  }
+
+  &_form {
+    flex-flow: column;
+  }
+
+  &_inputContainer {
+    padding: .5rem 0;
+  }
+
+  &_input, &_textarea {
+    width: 100%;
+    padding: .4rem .6rem;
+
+    box-sizing: border-box;
+    border: none;
+
+    font-family: 'Judson';
+    font-size: 1rem;
+  }
+
+  &_buttonContainer {
+    justify-content: flex-end;
+    padding: 1rem 0;
+  }
+
+  &_button {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight: 700;
+
+    color: $white;
+    border-radius: .2rem;
+
+    background: $zest;
+
+    padding: .8rem 1.2rem;
+
+    border: 0;
+    outline: 0;
   }
 }
