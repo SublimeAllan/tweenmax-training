@@ -3,6 +3,7 @@ var Controller = (function(){
     this.view = view
     this.animateLanding()
     this.colorNavbar()
+    this.writeWord()
   }
 
   Controller.prototype = {
@@ -16,6 +17,9 @@ var Controller = (function(){
       this.view.colorNavbar(
         document.querySelector('.Nav')
       )
+    },
+    writeWord: function() {
+      this.view.writeWord()
     }
   }
   return Controller

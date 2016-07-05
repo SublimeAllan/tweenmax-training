@@ -1,0 +1,17 @@
+.Contact {
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0 8rem;
+
+  background: $redRedemption;
+
+  &_row {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_svg {
+    width: 100%;
+    .st0{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+  }
+}

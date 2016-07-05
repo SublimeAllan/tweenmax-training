@@ -12,7 +12,12 @@ var View = (function(){
                                       .offset(window.innerHeight/2 - 60)
                                       .setClassToggle('.Nav', 'colored')
                                       .addTo(scrollMagicController)
-    }
+    },
+
+    writeWord: function() {
+    },
+
+
   }
   return View
 })()

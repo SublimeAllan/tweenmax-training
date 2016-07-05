@@ -321,3 +321,19 @@ a {
     margin: .5rem 0;
     font-size: 1rem;
     text-align: center; }
+
+.Contact {
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0 8rem;
+  background: #bd1b1b; }
+  .Contact_row {
+    justify-content: center;
+    align-items: center; }
+  .Contact_svg {
+    width: 100%; }
+    .Contact_svg .st0 {
+      fill: #FFFFFF;
+      stroke: #FFFFFF;
+      stroke-width: 2;
+      stroke-miterlimit: 10; }
