@@ -1,0 +1,14 @@
+.Footer {
+  flex-flow: column;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem 0;
+
+  background: $darkGrey;
+  color: $white;
+
+  text-transform: uppercase;
+  letter-spacing: .2rem
+}
